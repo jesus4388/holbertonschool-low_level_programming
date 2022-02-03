@@ -3,7 +3,8 @@
  *main - Entry point
  *Return: Always 0
  *
- *decripcion: primer proyecto 
+ *decripcion: primer proyecto
+ *
  */
 int main(void)
 {
