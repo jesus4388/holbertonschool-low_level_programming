@@ -2,6 +2,8 @@
 /*
  *main - Entry point
  *
+ *mi primer proyecto en C
+ *
  *Return: Always 0
  */
 int main(void)
