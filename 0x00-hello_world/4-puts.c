@@ -1,6 +1,6 @@
 #include <stdio.h>
 /*
- *main - Entry point
+ *main - entrada
  *Return: Always 0
  *
  *decripcion: primer proyecto
