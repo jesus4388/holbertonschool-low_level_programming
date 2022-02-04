@@ -1,23 +1,22 @@
 #include <stdio.h>
+
 /**
  * main - main
  * Return: 0
- *
- * description: alphabet
- *
  */
-int main(void)
 
+int main(void)
 {
-char alphabet = 'a';
-while (alphabet <= 'z' alphabet++)
-{
-  putchar(alphabet);
-}
-char ALPHABET = 'A';
-while (ALPHABET <= 'Z' ALPHABET++)
+int ALPHABET;
+int alphabet;
+
+for (ALPHABET = 'A'; ALPHABET <= 'Z'; ALPHABET++)
 {
 putchar(ALPHABET);
+}
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+{
+putchar(alphabet);
 }
 putchar('\n');
 return (0);
