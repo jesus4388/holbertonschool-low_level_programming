@@ -15,8 +15,8 @@ while (Mm <= 'z')
 putchar(Mm);
 
 Mm = Mm + 1;
-
-putchar('\n');
 }
+putchar('\n');
+
  return (0);
 }
