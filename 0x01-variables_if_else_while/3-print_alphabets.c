@@ -10,16 +10,14 @@ int main(void)
 
 {
 char alphabet = 'a';
-while (alphabet <= 'z')
+while (alphabet <= 'z' alphabet++)
 {
-putchar(alphabet);
-alphabet = alphabet + 1;
+  putchar(alphabet);
 }
 char ALPHABET = 'A';
-while (ALPHABET <= 'Z')
+while (ALPHABET <= 'Z' ALPHABET++)
 {
 putchar(ALPHABET);
-ALPHABET = ALPHABET + 1;
 }
 putchar('\n');
 return (0);
