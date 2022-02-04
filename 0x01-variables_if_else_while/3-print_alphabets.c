@@ -10,13 +10,13 @@ int main(void)
 int ALPHABET;
 int alphabet;
 
-for (ALPHABET = 'A'; ALPHABET <= 'Z'; ALPHABET++)
-{
-putchar(ALPHABET);
-}
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 putchar(alphabet);
+}
+for (ALPHABET = 'A'; ALPHABET <= 'Z'; ALPHABET++)
+{
+putchar(ALPHABET);
 }
 putchar('\n');
 return (0);
