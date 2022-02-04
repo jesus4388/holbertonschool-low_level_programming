@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 /**
- * maim - main
+ * main - main
  * Return: 0
  *
  * description: The last digit
