@@ -2,7 +2,6 @@
 /**
  *
  *main - main
- *
  *return: always 0
  *
  *descripcion: mi primer proyecto en c
