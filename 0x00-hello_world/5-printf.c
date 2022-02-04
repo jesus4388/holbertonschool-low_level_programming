@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
+ * main - main
  *
- *main - main
- *return: always 0
+ * Return: 0
  *
- *descripcion: mi primer proyecto en c
+ * descripcion: mi primer proyecto en c
  *
  */
 int main(void)
