@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * _isdigit - description: Returns 1 if c is a digit and 0 otherwise
