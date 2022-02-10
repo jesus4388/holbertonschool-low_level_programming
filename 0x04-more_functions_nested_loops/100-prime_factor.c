@@ -18,6 +18,7 @@ int main(void)
 		n = n / a;
 		}
 	}
-	putchar (a + 48);
+	printf ("%lu", a);
+
 	return (0);
 }
