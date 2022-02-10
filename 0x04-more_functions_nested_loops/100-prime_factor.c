@@ -18,7 +18,7 @@ int main(void)
 		n = n / a;
 		}
 	}
-	printf ("%lu", a);
-
+	printf("%lu", a);
+	putchar (10);
 	return (0);
 }
