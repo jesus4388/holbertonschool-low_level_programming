@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * main - prime factor - - description: prime factor
- * Return = 0
- *
+ * main - prime factor
+ * void nothing
+ * Return: 0
  */
 
 int main(void)
@@ -15,9 +15,9 @@ int main(void)
 	{
 		if (n % a == 0)
 		{
-		n = n % a;
+		n = n / a;
 		}
 	}
-	putchar (a);
+	putchar (a + 48);
 	return (0);
 }
