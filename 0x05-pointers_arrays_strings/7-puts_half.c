@@ -13,7 +13,7 @@ void puts_half(char *str)
 
 	if (n % 2 != 0)
 	{
-		n = n - 1;
+		n = n + 1;
 		n = n / 2;
 
 		for (; str[n]; n++)
