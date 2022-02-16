@@ -11,12 +11,12 @@ char *rot13(char *c)
 	int br = 0;
 	int cd = 0;
 
-	for(; c[br]; br++)
+	for (; c[br]; br++)
 	{
-		for(cd = 0; cd < 52; cd++)
+		for (cd = 0; cd < 52; cd++)
 		{
-			if(c[br] == alp[cd])
-			{	
+			if (c[br] == alp[cd])
+			{
 				c[br] = rot[cd];
 				break;
 			}
