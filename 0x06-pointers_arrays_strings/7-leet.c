@@ -7,13 +7,13 @@
 char *leet(char *c)
 {
 	int cd[] = {'A', 'a', 'E', 'e', 'O', 'o', 'T', 't', 'L', 'l'};
-	int nu[] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1,};
+	int nu[] = {52, 52, 51, 51, 48, 48, 55, 55, 49, 49};
 	int a = 0;
 	int b = 0;
 
 	for (; c[a]; c++)
 	{
-		for (; cd[b]; b++)
+		for (b = 0; b < 10; b++)
 		{
 			if (c[a] == cd[b])
 			{
