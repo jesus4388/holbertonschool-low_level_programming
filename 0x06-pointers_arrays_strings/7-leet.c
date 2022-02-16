@@ -11,7 +11,7 @@ char *leet(char *c)
 	int a = 0;
 	int b = 0;
 
-	for (; c[a]; c++)
+	for (; c[a]; a++)
 	{
 		for (b = 0; b < 10; b++)
 		{
