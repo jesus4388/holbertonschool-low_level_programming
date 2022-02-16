@@ -4,7 +4,7 @@
  * reverse_array - reverses the content of an array
  * @a: string
  * @n: number of characters
- * Return:
+ * Return: nothing
  */
 void reverse_array(int *a, int n)
 {
@@ -15,7 +15,7 @@ void reverse_array(int *a, int n)
 	c = n;
 
 	for (; b < n; b++)
-	{	
+	{
 		if (b >= c)
 		break;
 
