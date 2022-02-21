@@ -1,23 +1,22 @@
 #include "main.h"
 /**
- * int _strspn - 
- * @
- * @
- * Return:
+ *
+ *
+ *
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
 	int a = 0;
-	unsigned int b = 0;
+	int si = 0;
+	unsigned int r = 0;
 
 	for (; accept[a]; a++)
-	{	
-		for (; s[b]; b++)
+	{
+		for (; s[si]; si++)
 		{
-			if (s[a] == accept[b])
-			i++;
+			if (s[si] == accept[a])
+			r++;
 		}
 	}
-	return(i);
+	return(r);
 }
