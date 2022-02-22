@@ -1,22 +1,25 @@
 #include "main.h"
 /**
- *
- *
- *
+ * _strspn - the length of a prefix substring
+ * @s: string
+ * @accept: string
+ * Return: r
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int a = 0;
-	int si = 0;
+	int a;
+	int si;
 	unsigned int r = 0;
 
-	for (; accept[a]; a++)
+	for (a = 0; accept[a]; a++)
 	{
-		for (; s[si]; si++)
+		for (si = 0; s[si]; si++)
 		{
 			if (s[si] == accept[a])
 			r++;
+			if (s[si] == ',')
+			break;
 		}
 	}
-	return(r);
+	return (r);
 }
