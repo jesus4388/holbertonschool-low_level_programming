@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * _sqrt_recursion - returns the natural square root of a number
+ * raiz - returns the natural square root of a number
  * @b: root
- * @raiz: function
+ * @n: number natural
  * Return: -1 or root
  */
 int raiz(int n, int b)
@@ -17,6 +17,7 @@ int raiz(int n, int b)
 /**
  * _sqrt_recursion - returns the natural square root of a number
  * @n: number natural
+ * Return: n
  */
 int _sqrt_recursion(int n)
 {
