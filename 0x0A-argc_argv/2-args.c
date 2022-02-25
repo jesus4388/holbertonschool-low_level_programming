@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main -
- * @argc:
- * @argv:
- * Return:
+ * main - function
+ * @argc: arguments
+ * @argv: arguments
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int i;
 
-	for (i = 0; argv[i-1]; i++)
+	for (i = 0; i < argc - 1; i++)
 	{
 	printf("%s\n", argv[i]);
 	}
