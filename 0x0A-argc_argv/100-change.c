@@ -18,13 +18,13 @@ int main(int argc, char *argv[])
 	else
 	{
 		cents = atoi(argv[1]);
-		if (cents < 0)
+		if (cents <= 0)
 			printf("0\n");
 		if (cents > 25)
 			printf("%d\n", (cents / 25) + (cents % 25));
-		else if (cents > 10)
+		if (cents > 10)
 			printf("%d\n", cents % 10);
-		else
+		if ((cents > 0) && (cents < 10))
 			printf("%d\n", cents / 10);
 	}
 	return (0);
