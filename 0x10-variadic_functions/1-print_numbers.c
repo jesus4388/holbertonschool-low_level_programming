@@ -13,7 +13,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	unsigned int j = 0;
 
 	va_start(ap, n);
-
+	
+	if (separator != NULL)
 	for (i = 0; i < n; i++)
 	{
 		j = va_arg(ap, int);
