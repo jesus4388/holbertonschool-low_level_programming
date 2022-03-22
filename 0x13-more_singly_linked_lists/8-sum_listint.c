@@ -12,16 +12,13 @@ int sum_listint(listint_t *head)
 	listint_t *aux = head;
 	int n = 0;
 
-	if ((head)->next =! NULL)
-	{
-		aux = head;
-		for (; aux;)
-		{
-			n = n + aux->n;
-			aux = aux->next;
-		}
-		return (n);
-	}
-	else
+	if (head == NULL)
 		return (0);
+
+	for (; aux;)
+	{
+		n = n + aux->n;
+		aux = aux->next;
+	}
+	return (n);
 }
