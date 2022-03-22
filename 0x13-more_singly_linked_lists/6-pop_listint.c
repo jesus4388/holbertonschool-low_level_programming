@@ -4,16 +4,17 @@
 #include "lists.h"
 /**
  * pop_listint - funtion that deletes the head node
- * head: pointer
+ * @head: pointer
  * Return: n or 0
  */
 int pop_listint(listint_t **head)
 {
 	listint_t *aux = *head;
 	int n = 0;
-	if(head)
+
+	if (head)
 	{
-		*head = aux->next;	
+		*head = aux->next;
 		n = aux->n;
 		free(aux);
 		return (n);
