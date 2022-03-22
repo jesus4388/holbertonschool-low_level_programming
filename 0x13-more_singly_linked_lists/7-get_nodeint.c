@@ -4,8 +4,8 @@
 #include "lists.h"
 /**
  * get_nodeint_at_index - function that returns the nth node
- * @head:
- * @index:
+ * @head: pointer
+ * @index: is the index of the node
  * Return: nth or null
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -17,14 +17,15 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		aux = aux->next;
 
 	if (index > i)
-		return(NULL);
+		return (NULL);
+
 	aux = head;
-	for (i=0; i < index; i++)
+	for (i = 0; i < index; i++)
 	{
 		aux = aux->next;
 	}
-	if(aux == NULL)
-		return(NULL);
+	if (aux == NULL)
+		return (NULL);
 	else
 		return (aux);
 }
