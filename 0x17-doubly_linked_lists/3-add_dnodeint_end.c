@@ -1,5 +1,9 @@
 #include "lists.h"
 /**
+ * add_dnodeint_end - add end
+ * @n: entero
+ * @head: pointer
+ * Return: new node
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
