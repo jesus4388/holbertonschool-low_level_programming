@@ -13,9 +13,9 @@ int main(void)
     dlistint_t *head;
 
     head = NULL;
-    add_dnodeint_end(&head, 0);
-    add_dnodeint_end(&head, 1);
-    insert_dnodeint_at_index(&head, 1, 4096);
+    insert_dnodeint_at_index(&head, 1, 98);
+    add_dnodeint_end(&head, 9);
+    add_dnodeint_end(&head, 6);
   /**  add_dnodeint_end(&head, 2);
     add_dnodeint_end(&head, 3);
     add_dnodeint_end(&head, 4);
