@@ -1,20 +1,5 @@
 #include "lists.h"
 /**
- * dlistint_len - len
- * @h: head
- * Return: number of elements
- */
-size_t dlistint_len(const dlistint_t *h)
-{
-	int i = 0;
-
-	for (i = 0; h != NULL; i++)
-	{
-		h = h->next;
-	}
-	return (i);
-}
-/**
  * delete_dnodeint_at_index - delete_dnodeint_at_index
  * @head: pointer
  * @index: index
@@ -22,40 +7,29 @@ size_t dlistint_len(const dlistint_t *h)
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	unsigned int i = 0, n = 0;
-	dlistint_t *aux = *head;
+	unsigned int i = 0;
+	dlistint_t *aux = NULL;
 
 	if (*head)
 	{
-		n = dlistint_len(*head);
-		if (index == n)
-		{
-			while (aux->next)
-			{
-				aux = aux->next;
-			}
-			aux->prev->next = NULL;
-			free(aux);
-		}
-		for (i = 0; i < index && aux->next; i++)
+		aux = *head;
+		for (i = 0; i < index && (*head)->next; i++)
 		{
 			aux = aux->next;
 		}
-		if (index == 0)
+		if (index == i)
 		{
-			*head = (*head)->next;
-			aux->prev = NULL;
+			if (index == 0)
+				*head = (*head)->next;
+			if (aux->prev != NULL)
+				aux->prev->next = aux->next;
+			if (aux->next != NULL)		
+				aux->next->prev = aux->prev;
 			aux->next = NULL;
+			aux->prev = NULL;
 			free(aux);
-		}
-		if (index == i && aux->next)
-		{
-			aux->prev->next = aux->next;
-			aux->next->prev = aux->prev;
-			free(aux);
+			return(1);
 		}
 	}
-	else
-		return (-1);
-	return (1);
+	return (-1);
 }
