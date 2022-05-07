@@ -38,6 +38,8 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 			aux->prev = new;
 			return (new);
 		}
+		else
+			return (NULL);
 	}
 	return (NULL);
 }
