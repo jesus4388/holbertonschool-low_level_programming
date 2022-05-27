@@ -1,5 +1,7 @@
 #include "hash_tables.h"
 /**
+ * hash_table_print - hash_table_print
+ * @ht: ht
  */
 void hash_table_print(const hash_table_t *ht)
 {
@@ -7,8 +9,9 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *aux = NULL;
 	int flag = 0;
 
-	if (ht != NULL)
-		printf("{");
+	if (ht == NULL)
+		return;
+	printf("{");
 	for (i = 0; i < ht->size; i++)
 	{
 		aux = ht->array[i];
