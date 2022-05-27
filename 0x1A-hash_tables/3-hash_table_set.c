@@ -15,9 +15,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL)
 		return (0);
-	if (ht->arra[index] == NULL)
+	if (ht->array[index] == NULL)
 		return (0);
-
 	if (strlen(key) == 0)
 		return (0);
 
