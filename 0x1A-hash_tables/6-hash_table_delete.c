@@ -1,6 +1,7 @@
 #include "hash_tables.h"
 /**
- *
+ *  hash_table_delete - free node
+ *  @ht: ht
  */
 void hash_table_delete(hash_table_t *ht)
 {
@@ -14,7 +15,7 @@ void hash_table_delete(hash_table_t *ht)
 	{
 		aux = ht->array[i];
 		to_free = ht->array[i];
-		while(aux)
+		while (aux)
 		{
 			aux = aux->next;
 			free(to_free->value);
