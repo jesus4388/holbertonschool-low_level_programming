@@ -7,4 +7,5 @@ all: hello.o
 	$(CC) $(OBJ) -o $(NAME)
 
 hello.o:
-	$(CC) -c $(SRC)
+	$(CC) -c school.c
+	$(CC) -c main.c
