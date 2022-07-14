@@ -6,7 +6,9 @@
  * @c: int
  * Return: if it is uppercase it receives 1 otherwise 0
  */
+
 int _isupper(char c)
+
 {
 	if isupper(c)
 	{
