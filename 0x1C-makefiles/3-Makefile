@@ -8,7 +8,7 @@ TMP = *~
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 clean:
-	$(RM) $(TMP)
+	$(RM) $(TMP) $(NAME)
 oclean:
 	$(RM) $(OBJ)
 fclean: oclean
