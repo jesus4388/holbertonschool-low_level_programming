@@ -9,7 +9,9 @@
  */
 int main(void)
 {
-    int array[1];
+    int array[] = {
+        3
+    };
     size_t size = sizeof(array) / sizeof(array[0]);
 
     printf("Found %d at index: %d\n\n", 3, linear_search(array, size, 3));
