@@ -37,7 +37,7 @@ int search(int *array, int incio, int fin, int value)
 	j = print(array, incio, fin);
 	mitad = incio + (j / 2);
 	if (array[mitad] == value)
-		return(mitad);
+		return (mitad);
 	if (incio == fin)
 		return (-1);
 	if (value > array[mitad])
