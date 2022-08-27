@@ -1,4 +1,5 @@
 #include "search_algos.h"
+#include <stdio.h>
 /**
  * print - print
  * @array: pointer to the first element of the array to search in
